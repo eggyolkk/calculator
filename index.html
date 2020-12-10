@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' href='css/styles.css'>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+		<title>Calculator</title>
+	</head>
+
+	<body>
+		<div id='calculator'>
+			<div id='output'>
+				<p>0</p>
+			</div>
+			<div id='numpad'>
+				<div id='clear' class='numpad-cell' onclick='clearOutput()'>CLEAR</div>
+				<div id='add' class='numpad-cell operator' onclick='chooseOperator("add")'>+</div>
+
+				<div id='n1' class='numpad-cell number' onclick='chooseNumber("1")'>1</div>
+				<div id='n2' class='numpad-cell number' onclick='chooseNumber("2")'>2</div>
+				<div id='n3' class='numpad-cell number' onclick='chooseNumber("3")'>3</div>
+
+				<div id='subtract' class='numpad-cell operator' onclick='chooseOperator("subtract")'>-</div>
+
+				<div id='n4' class='numpad-cell number' onclick='chooseNumber("4")'>4</div>
+				<div id='n5' class='numpad-cell number' onclick='chooseNumber("5")'>5</div>
+				<div id='n6' class='numpad-cell number' onclick='chooseNumber("6")'>6</div>
+
+				<div id='multiply' class='numpad-cell operator' onclick='chooseOperator("multiply")'>x</div>
+
+				<div id='n7' class='numpad-cell number' onclick='chooseNumber("7")'>7</div>
+				<div id='n8' class='numpad-cell number' onclick='chooseNumber("8")'>8</div>
+				<div id='n9' class='numpad-cell number' onclick='chooseNumber("9")'>9</div>
+
+				<div id='divide' class='numpad-cell operator' onclick='chooseOperator("divide")'>÷</div>
+
+				<div id='n0' class='numpad-cell number' onclick='chooseNumber("0")'>0</div>
+				<div id='dot' class='numpad-cell number' onclick='chooseNumber(".")'>.</div>
+				<div id='equals' class='numpad-cell' onclick="operate()">=</div>
+			</div>
+		</div>
+
+		<script src='script.js'></script>
+	</body>
+</html>
